@@ -1,20 +1,14 @@
 package com.jd.movieticketstrading.domain;
 
 import com.jd.movieticketstrading.core.base.Ticket;
-import com.jd.movieticketstrading.core.contract.ICalculate;
 import lombok.Builder;
 
 @Builder
-public class TeenTicket extends Ticket implements ICalculate
-{
+public class TeenTicket extends Ticket {
 
     @Override
     public double calculateCost() {
-        return 0;
+        return 12;
     }
 
-    @Override
-    public double calculateDiscount() {
-        return 0;
-    }
 }
