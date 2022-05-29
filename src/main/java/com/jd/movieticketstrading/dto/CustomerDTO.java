@@ -12,5 +12,5 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class CustomerDTO {
      private String name;
-     private long age;
+     private Long age;
 }

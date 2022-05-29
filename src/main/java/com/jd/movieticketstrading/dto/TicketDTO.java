@@ -1,6 +1,6 @@
 package com.jd.movieticketstrading.dto;
 
-import com.jd.movieticketstrading.core.meta.TicketType;
+import com.jd.movieticketstrading.core.meta.CustomerType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class TicketDTO {
 
-     private TicketType ticketType;
+     private CustomerType ticketType;
 
      private long quantity;
 
