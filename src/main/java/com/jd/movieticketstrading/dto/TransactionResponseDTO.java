@@ -12,5 +12,5 @@ import java.util.List;
 public class TransactionResponseDTO extends TransactionBaseDTO{
 
     private List<TicketDTO> tickets;
-    private long totalCost;
+    private double totalCost;
 }

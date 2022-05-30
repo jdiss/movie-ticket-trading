@@ -26,8 +26,10 @@ public enum CustomerType {
     }
 
     public static CustomerType find(Long age) {
-        return Arrays.asList(CustomerType.values()).stream()
-                .filter(e -> e.min <= age && e.max < age).findFirst()
+        var result = Arrays.asList(CustomerType.values()).stream()
+                .filter(e -> e.min <= age && e.max > age).findFirst()
                 .orElse(CustomerType.ADULT);
+
+        return result;
     }
 }

@@ -6,12 +6,15 @@ import lombok.Builder;
 @Builder
 public class ChildrenTicket extends Ticket {
 
+    public ChildrenTicket(){
+        TICKECT_PRICE = 5;
+    }
     @Override
     public double calculateCost() {
         if(this.discount!= 0){
-            return 5 - discount;
+            return TICKECT_PRICE - discount;
         }
-        return 5;
+        return TICKECT_PRICE;
     }
 
 }

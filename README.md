@@ -19,3 +19,13 @@ Your task is to implement a java application which will expose an API call to ta
 The ID of the transaction
 Each individual type of movie ticket present in that transaction, ordered alphabetically, and it's quantity and total cost
 The total cost of all movie tickets for that transaction
+
+### Feature to be added
+
+- Unit test
+- Integration Test for service level
+- Model and Calculation Validation
+- Custom exception bind to Http response
+- Error Handling
+- Currency display with unit 
+

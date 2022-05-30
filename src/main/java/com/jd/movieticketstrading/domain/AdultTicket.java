@@ -6,9 +6,13 @@ import lombok.Builder;
 @Builder
 public class AdultTicket extends Ticket  {
 
+    public AdultTicket(){
+        TICKECT_PRICE = 25;
+    }
+
     @Override
     public double calculateCost() {
-        return 25;
+        return TICKECT_PRICE;
     }
 
 }
